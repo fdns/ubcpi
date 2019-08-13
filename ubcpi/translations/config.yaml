@@ -1,0 +1,7 @@
+locales:
+    - en
+    - es_419
+
+generate_merge: {}
+segment: {}
+
