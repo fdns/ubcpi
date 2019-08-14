@@ -454,11 +454,11 @@ class PeerInstructionXBlock(XBlock, MissingDataFetcherMixin, PublishEventMixin):
         frag.add_javascript_url("//ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular-cookies.js")
         frag.add_javascript_url("//cdnjs.cloudflare.com/ajax/libs/angular-gettext/2.3.8/angular-gettext.min.js")
         frag.add_javascript_url("//cdnjs.cloudflare.com/ajax/libs/d3/3.3.13/d3.min.js")
+        frag.add_javascript(self.resource_string("static/js/src/translations.js"))
         frag.add_javascript(self.resource_string("static/js/src/d3-pibar.js"))
         frag.add_javascript(self.resource_string("static/js/src/ubcpi.js"))
         frag.add_javascript(self.resource_string("static/js/src/ubcpi-answer-result-directive.js"))
         frag.add_javascript(self.resource_string("static/js/src/ubcpi-barchart-directive.js"))
-        frag.add_javascript(self.resource_string("static/js/src/translations.js"))
 
         # convert image URLs
         question = deepcopy(self.question_text)
