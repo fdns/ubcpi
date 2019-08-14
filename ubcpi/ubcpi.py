@@ -444,7 +444,7 @@ class PeerInstructionXBlock(XBlock, MissingDataFetcherMixin, PublishEventMixin):
 
         answers = self.get_answers_for_student()
         html = ""
-        html += self.resource_string("static/html/ubcpi.html", lang=utils.translation.get_language())
+        html += self.resource_string("static/html/ubcpi.html")
 
         frag = Fragment(html)
         frag.add_css(self.resource_string("static/css/ubcpi.css"))
